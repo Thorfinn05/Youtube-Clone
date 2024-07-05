@@ -1,29 +1,51 @@
 .sidebar {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 55px;
-    background-color: white;
-    width: 72px;
-    z-index: 200;
-    padding-top: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width: 72px;
+  z-index: 200;
+  padding-top: 5px;
 }
-
 .sidebar-link {
-    height: 74px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
 }
 .sidebar-link:hover {
-    background-color: rgb(234, 232, 232);
+  background-color: rgb(234, 232, 232);
+  border-radius: 10px;
+}
+.sidebar-link:active {
+  background-color: rgb(200, 200, 200);
+}
+.sidebar-link .tooltip {
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 4px 8px 4px 8px;
+  border: 1px solid black;
+  font-size: 11px;
+  bottom: -8px;
+  right: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.sidebar-link:hover .tooltip {
+  opacity: 1;
 }
 .sidebar-link img {
-    height: 24px;
-    margin-bottom: 4px;
+  height: 24px;
+  margin-bottom: 4px;
 }
 .sidebar-link div{
-    font-size: 10px;
+  font-size: 10px;
 }
