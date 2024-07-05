@@ -1,6 +1,6 @@
 <h1>YouTube Clone using HTML and CSS</h1>
 
-<h3>Description:</h3>
+<h3><u>Description:</u></h3>
 This project is a simplified clone of YouTube, built using only HTML and CSS. The clone allows users to browse and click on video thumbnails to view the corresponding YouTube videos.
 
 <h3>File Structure:</h3>
